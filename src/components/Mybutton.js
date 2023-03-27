@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Mybutton = ({ onButtonClick }) => {
+const Mybutton = ({ onButtonClick, counter }) => {
 
   return (
     <div>
       <h1>Hello world</h1>
-      <button onClick={onButtonClick}>Click me</button>
+      <button onClick={onButtonClick}>Click me {counter}</button>
     </div>
   )
 }

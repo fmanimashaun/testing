@@ -22,9 +22,11 @@ function App () {
 
   return (
     <div>
-      <Mybutton onButtonClick={incraseCount}/>
+      <Mybutton onButtonClick={incraseCount} counter={count} />
+      <Screen counter={count} />
       <Screen counter={count} />
       <ShoppingList items={products} />
+      <Mybutton onButtonClick={incraseCount} counter={count} />
     </div>
   );
 }
